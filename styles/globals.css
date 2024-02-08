@@ -14,3 +14,8 @@ body {
   padding: 30px;
   border-radius: 15px;
 }
+
+h1 {
+  font-size: 28px;
+  color: white;
+}
