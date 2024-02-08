@@ -1,5 +1,5 @@
 import UnHide from "@/icons/UnHide";
-import Hide from "@/icons/hide";
+import Hide from "@/icons/Hide";
 import React, { useState } from "react";
 
 const MainContainer = () => {
