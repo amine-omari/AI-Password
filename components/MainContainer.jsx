@@ -39,7 +39,7 @@ const MainContainer = () => {
       {password ? (
         <div>
           {isHide ? (
-            <div>
+            <div className="password">
               <h2>{password}</h2>
               <button className="hide_button">
                 <Hide />
