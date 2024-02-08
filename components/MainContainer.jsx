@@ -24,6 +24,13 @@ const MainContainer = () => {
     setPassword(result);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const numCharacters = parseInt(event.target.elements.numCharacters.value);
+    const level = event.target.elements.level.value;
+    generatePassword(numCharacters, level);
+  };
+
   return (
     <div className="card">
       <h1>PASSWORD GENERATOR</h1>
