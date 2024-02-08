@@ -3,6 +3,27 @@ import React, { useState } from "react";
 const MainContainer = () => {
   const [password, setPassword] = useState("");
 
+  const generatePassword = (numCharacters, level) => {
+    let chars = "";
+
+    // Adjust the character set based on the selected level
+    if (level === "easy") {
+      chars = "0123456789";
+    } else if (level === "strong") {
+      chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    } else if (level === "veryStrong") {
+      chars =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
+    }
+
+    let result = "";
+    for (let i = 0; i < numCharacters; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+
+    setPassword(result);
+  };
+
   return (
     <div className="card">
       <h1>PASSWORD GENERATOR</h1>
