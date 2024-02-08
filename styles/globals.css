@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .card {
@@ -13,11 +14,11 @@ body {
   align-items: center;
   padding: 30px;
   border-radius: 15px;
+  color: white;
 }
 
 h1 {
   font-size: 28px;
-  color: white;
 }
 
 form {
@@ -25,4 +26,9 @@ form {
   flex-direction: column;
   width: 100%;
   gap: 10px;
+}
+
+form select {
+  padding: 8px 16px;
+  border-radius: 10px;
 }
