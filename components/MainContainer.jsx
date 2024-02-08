@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MainContainer = () => {
+  const [password, setPassword] = useState("");
+
   return (
     <div className="card">
       <h1>PASSWORD GENERATOR</h1>
