@@ -21,6 +21,7 @@ const MainContainer = () => {
             <option value="veryStrong">very strong</option>
           </optgroup>
         </select>
+        <button>generate passowrd</button>
       </form>
     </div>
   );
