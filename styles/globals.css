@@ -19,3 +19,10 @@ h1 {
   font-size: 28px;
   color: white;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
