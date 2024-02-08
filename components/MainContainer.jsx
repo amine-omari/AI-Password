@@ -8,9 +8,9 @@ const MainContainer = () => {
         <label>choose number of characters :</label>
         <select name="" id="">
           <optgroup label="number of characters">
-            <option value="">8</option>
-            <option value="">10</option>
-            <option value="">12</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
           </optgroup>
         </select>
         <label>choose level of passowrd :</label>
