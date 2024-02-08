@@ -1,8 +1,9 @@
+import Hide from "@/icons/hide";
 import React, { useState } from "react";
 
 const MainContainer = () => {
   const [password, setPassword] = useState("");
-  const [isHide, setIsHide] = useState();
+  const [isHide, setIsHide] = useState(true);
 
   const generatePassword = (numCharacters, level) => {
     let chars = "";
@@ -37,7 +38,16 @@ const MainContainer = () => {
       {password ? <h1> YOUR PASSWORD IS</h1> : <h1>PASSWORD GENERATOR</h1>}
       {password ? (
         <div>
-          <h2>{password}</h2>
+          {isHide ? (
+            <div>
+              <h2>{password}</h2>
+              <button className="hide_button">
+                <Hide />
+              </button>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
       ) : (
         <form onSubmit={handleSubmit}>

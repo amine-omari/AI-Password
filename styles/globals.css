@@ -50,3 +50,11 @@ form button:hover {
   opacity: 0.85;
   scale: 0.98;
 }
+
+.hide_button {
+  width: 34px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
