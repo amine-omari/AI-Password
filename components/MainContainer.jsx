@@ -33,7 +33,7 @@ const MainContainer = () => {
 
   return (
     <div className="card">
-      <h1>PASSWORD GENERATOR</h1>
+      {password ? <h1> YOUR PASSWORD IS</h1> : <h1>PASSWORD GENERATOR</h1>}
       {password ? (
         <h2>{password}</h2>
       ) : (
