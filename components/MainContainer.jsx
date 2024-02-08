@@ -34,7 +34,7 @@ const MainContainer = () => {
   return (
     <div className="card">
       <h1>PASSWORD GENERATOR</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>choose number of characters :</label>
         <select name="numCharacters" id="numCharacters">
           <optgroup label="number of characters">
