@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const MainContainer = () => {
   const [password, setPassword] = useState("");
+  const [isHide, setIsHide] = useState();
 
   const generatePassword = (numCharacters, level) => {
     let chars = "";
@@ -35,7 +36,9 @@ const MainContainer = () => {
     <div className="card">
       {password ? <h1> YOUR PASSWORD IS</h1> : <h1>PASSWORD GENERATOR</h1>}
       {password ? (
-        <h2>{password}</h2>
+        <div>
+          <h2>{password}</h2>
+        </div>
       ) : (
         <form onSubmit={handleSubmit}>
           <label>choose number of characters :</label>
