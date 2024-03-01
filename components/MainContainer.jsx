@@ -37,9 +37,9 @@ const MainContainer = () => {
 
   return (
     <div className="card">
-      {password ? <h1> YOUR PASSWORD IS</h1> : <h1>PASSWORD GENERATOR</h1>}
+      {password ? <h1> YOUR PASSWORD IS:</h1> : <h1>PASSWORD GENERATOR</h1>}
       {password ? (
-        <div className="password_container">
+        <div>
           <h2>{isHide ? password : "*************"}</h2>
           <button onClick={() => setIsHide(!isHide)} className="hide_button">
             {isHide ? <Hide /> : <UnHide />}
