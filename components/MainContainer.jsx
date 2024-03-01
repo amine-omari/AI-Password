@@ -36,7 +36,7 @@ const MainContainer = () => {
   };
 
   return (
-    <div className="card">
+    <div>
       {password ? <h1> YOUR PASSWORD IS:</h1> : <h1>PASSWORD GENERATOR</h1>}
       {password ? (
         <div>
